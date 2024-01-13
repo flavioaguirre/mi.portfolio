@@ -10980,6 +10980,29 @@ p {
     margin-right: 0;
   }
 }
+
+span.maq-escribir{
+  margin: 50px auto;
+  display: block;
+  white-space: nowrap;
+  /* border-right: .5rem solid; */
+  width: max-content;
+
+  animation: typing 2.2s steps(23),
+  blink .6s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from { clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);}
+  to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; 
+  width:max-content;}
+}
+
 header.masthead {
   height: 100vh;
   text-align: center;
@@ -10997,7 +11020,7 @@ header.masthead {
   height: 8rem;
   background: #066173;
   border-radius: 10%;
-  margin: 7% 0 3% 44%;
+  margin: 7% 0 3% 85%;
 }
 
 header.masthead .masthead-subheading {
@@ -11291,10 +11314,11 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .team-member img {
-  width: 14rem;
-  height: 15rem;
+  width: 15.7rem;
+  height: 16.7rem;
   border: 0.5rem double #1E293B;
-  background: #066173;
+ /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,207cca+51,7db9e8+100;Blue+Gloss+Default */
+ background: linear-gradient(135deg,  #0D1526 0%,#0D1526 50%,#0d6efd 90%, #207cca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ 
   border-radius: 20%;
 }
 .team-member h4, .team-member .h4 {
